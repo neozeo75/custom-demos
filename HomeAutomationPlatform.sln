@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAutomationPlatform", "HomeAutomationPlatform\HomeAutomationPlatform.csproj", "{D89E369E-E138-4FDE-B2BE-32DBEC6866CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeAutomationPlatform", "HomeAutomationPlatform\HomeAutomationPlatform.csproj", "{D89E369E-E138-4FDE-B2BE-32DBEC6866CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAutomationDevice", "HomeAutomationDevice\HomeAutomationDevice.csproj", "{261C875F-144D-4077-BB15-DCC24727A214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpExample", "HttpExample\HttpExample.csproj", "{AEB23C05-986D-4BF6-981A-A53B87DAC182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,22 @@ Global
 		{261C875F-144D-4077-BB15-DCC24727A214}.Release|x86.ActiveCfg = Release|x86
 		{261C875F-144D-4077-BB15-DCC24727A214}.Release|x86.Build.0 = Release|x86
 		{261C875F-144D-4077-BB15-DCC24727A214}.Release|x86.Deploy.0 = Release|x86
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|ARM.Build.0 = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|x64.Build.0 = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Debug|x86.Build.0 = Debug|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|ARM.Build.0 = Release|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|x64.ActiveCfg = Release|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|x64.Build.0 = Release|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|x86.ActiveCfg = Release|Any CPU
+		{AEB23C05-986D-4BF6-981A-A53B87DAC182}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
