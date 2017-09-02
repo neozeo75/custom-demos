@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationDevice\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-01T03:55:36.037</Modified>
+      <Modified>2017-09-02T05:01:42.631</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationDevice\bin\x86\Debug\HomeAutomationDevice.exe">
       <PackagePath>entrypoint\HomeAutomationDevice.exe</PackagePath>
-      <Modified>2017-09-01T03:55:35.319</Modified>
+      <Modified>2017-09-02T05:01:40.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pashim\.nuget\packages\DotNetty.Buffers\0.4.6\lib\netstandard1.3\DotNetty.Buffers.dll">
       <PackagePath>DotNetty.Buffers.dll</PackagePath>
@@ -768,7 +768,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationDevice\bin\x86\Debug\Core\HomeAutomationDevice.exe">
       <PackagePath>HomeAutomationDevice.exe</PackagePath>
-      <Modified>2017-09-01T03:55:36.025</Modified>
+      <Modified>2017-09-02T05:01:42.623</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

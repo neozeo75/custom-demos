@@ -5,6 +5,7 @@ using Microsoft.Azure.Devices;
 using HomeAutomationPlatform.Model;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using System.Diagnostics;
 
 namespace HomeAutomationPlatform.Controllers
 {
@@ -16,19 +17,34 @@ namespace HomeAutomationPlatform.Controllers
 
         public DeviceElementController()
         {
-            _serviceClientHelper = new ServiceClientHelper("HostName=azureiotworkshophub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=djCNmksyeHvG9MT+ln67Y4e7ghZrGU3iHVLT6SG2ZXQ=");
+            try
+            {
+                _serviceClientHelper = new ServiceClientHelper("HostName=azureiotworkshophub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=djCNmksyeHvG9MT+ln67Y4e7ghZrGU3iHVLT6SG2ZXQ=");
+            }
+            catch (Exception execption)
+            {
+                throw new Exception($"An error occurred while connecting to IoT Hub (inner message: {execption.Message}");
+            }
         }
 
         [HttpGet]
         [Route("GetDeviceStatus")]
         public async Task<object> GetDeviceElementStatusAsync(string deviceId, ElementType elementType)
         {
-            await _serviceClientHelper.OpenConnectionAsync();
-            var result = await _serviceClientHelper.InvokeDeviceMethodAsync(
-                deviceId,
-                GetMethodName(elementType), 
-                null);
-            await _serviceClientHelper.CloseConnectionAsync();
+            var result = new CloudToDeviceMethodResult() { Status = 200 };
+            try
+            {
+                await _serviceClientHelper.OpenConnectionAsync();
+                result = await _serviceClientHelper.InvokeDeviceMethodAsync(
+                    deviceId,
+                    GetMethodName(elementType),
+                    null);
+                await _serviceClientHelper.CloseConnectionAsync();
+            } 
+            catch
+            {
+                Debug.WriteLine("An error occurred while getting the device element status.");
+            }
             return result;
         }
         
@@ -36,12 +52,20 @@ namespace HomeAutomationPlatform.Controllers
         [Route("SetDevices")]
         public async Task<object> SetDevicesElementAsync([FromBody] DeviceElementStatus status)
         {
-            await _serviceClientHelper.OpenConnectionAsync();
-            var result = await _serviceClientHelper.InvokeDeviceMethodAsync(
-                status.DeviceId,
-                GetMethodName(status.DeviceElements[0].ElementType),
-                status.ToString());
-            await _serviceClientHelper.CloseConnectionAsync();
+            var result = new CloudToDeviceMethodResult() { Status = 200 };
+            try
+            {
+                await _serviceClientHelper.OpenConnectionAsync();
+                result = await _serviceClientHelper.InvokeDeviceMethodAsync(
+                    status.DeviceId,
+                    GetMethodName(status.DeviceElements[0].ElementType),
+                    status.ToString());
+                await _serviceClientHelper.CloseConnectionAsync();
+            }
+            catch
+            {
+                Debug.WriteLine("An error occurred while getting the device element status.");
+            }
             return result;
         }
 

@@ -6,9 +6,6 @@ namespace HomeAutomationPlatform
 {
     public class ServiceClientHelper
     {
-        private ServiceClient _serviceClient;
-        private bool _isConnected = false;
-
         public ServiceClientHelper(string connectionString)
         {
             _serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
@@ -29,7 +26,20 @@ namespace HomeAutomationPlatform
         public async Task<CloudToDeviceMethodResult> InvokeDeviceMethodAsync(string deviceId, string methodName, string payload)
         {
             var methodInvokation = new CloudToDeviceMethod(methodName);
+            var result = new CloudToDeviceMethodResult()
+            {
+                Status = 200
+            };
+
             methodInvokation.SetPayloadJson(payload);
+            try
+            {
+                result = await _serviceClient.InvokeDeviceMethodAsync(deviceId, methodInvokation);
+            }
+            catch
+            {
+                Debug.WriteLine($"An error occured while invoking device method on: {deviceId}");
+            }
             return await _serviceClient.InvokeDeviceMethodAsync(deviceId, methodInvokation);
         }
 
@@ -40,5 +50,8 @@ namespace HomeAutomationPlatform
                 await _serviceClient.CloseAsync();
             }
         }
+
+        private ServiceClient _serviceClient;
+        private bool _isConnected = false;
     }
 }
