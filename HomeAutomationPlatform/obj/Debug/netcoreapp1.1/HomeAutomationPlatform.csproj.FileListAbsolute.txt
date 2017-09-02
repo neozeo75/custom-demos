@@ -1,0 +1,9 @@
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\bin\Debug\netcoreapp1.1\HomeAutomationPlatform.deps.json
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\bin\Debug\netcoreapp1.1\HomeAutomationPlatform.runtimeconfig.json
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\bin\Debug\netcoreapp1.1\HomeAutomationPlatform.runtimeconfig.dev.json
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\bin\Debug\netcoreapp1.1\HomeAutomationPlatform.dll
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\bin\Debug\netcoreapp1.1\HomeAutomationPlatform.pdb
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\obj\Debug\netcoreapp1.1\HomeAutomationPlatform.AssemblyInfo.cs
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\obj\Debug\netcoreapp1.1\HomeAutomationPlatform.dll
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\obj\Debug\netcoreapp1.1\HomeAutomationPlatform.pdb
+D:\Documents\클라우드\OneDrive - Microsoft\Projects\HomeAutomationPlatform\HomeAutomationPlatform\obj\Debug\netcoreapp1.1\HomeAutomationPlatform.csprojResolveAssemblyReference.cache

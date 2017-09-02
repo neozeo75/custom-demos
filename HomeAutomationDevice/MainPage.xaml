@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="HomeAutomationDevice.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HomeAutomationDevice"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" MinWidth="640" MinHeight="350" Width="640" Height="350">
+        <Ellipse x:Name="Light" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="137" Margin="16,170,0,0" Stroke="Black" VerticalAlignment="Top" Width="137"/>
+        <Ellipse x:Name="Fan" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="135" Margin="194,172,0,0" Stroke="Black" VerticalAlignment="Top" Width="135"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,28,0,0" TextWrapping="Wrap" Text="Temperature: " VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock x:Name="Humidity" HorizontalAlignment="Left" Margin="243,87,0,0" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="122,81,0,0" TextWrapping="Wrap" Text="Humidity:" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="Temperature" HorizontalAlignment="Left" Margin="239,34,0,0" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,87,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblTemperatureSign" HorizontalAlignment="Left" Margin="329,44,0,0" TextWrapping="Wrap" Text="°C" VerticalAlignment="Top" Height="32" Width="39" FontWeight="Bold" FontSize="18.667"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,148,0,0" TextWrapping="Wrap" Text="Fan Status" VerticalAlignment="Top" FontSize="14" Width="65"/>
+        <TextBlock HorizontalAlignment="Left" Margin="218,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="111">
+            <Run Text="Light"/>
+            <Run Text=" Status"/>
+        </TextBlock>
+        <CaptureElement x:Name="_captureElement" HorizontalAlignment="Left" Height="234" Margin="373,56,0,0" VerticalAlignment="Top" Width="234"/>
+
+    </Grid>
+</Page>
